@@ -59,6 +59,15 @@ This project uses basic HTML and JavaScript to make API calls to the Aptos netwo
 3. **Access the application**:
    Once the local server is running, open the provided local address in your browser (e.g., `http://localhost:8000`), and you will be able to interact with the FundNow application.
 
+## Deployed on Vercel
+
+You can access the live version of **FundNow** at:
+
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-%23000000.svg?logo=vercel&style=for-the-badge)](https://fund-now.vercel.app)
+
+Visit the live site here: [fund-now.vercel.app](https://fund-now.vercel.app)
+----
+
 ### How to Use
 
 - **Create a Campaign**: Use the form on the homepage to create a new campaign by providing the name, description, goal amount, and category.
