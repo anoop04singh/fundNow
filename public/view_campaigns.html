@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/view_campaigns.css" rel="stylesheet">
+    <title>View Campaigns</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">View Your Campaigns</h1>
+        
+        <button id="connect-wallet" class="connect-button">Connect Wallet</button>
+        <p id="wallet-address" class="wallet-info">Wallet Address: Not connected</p>
+
+        <div class="campaign-container">
+            <!-- Campaigns will be dynamically loaded here -->
+        </div>
+    </div>
+    <!-- Contribution Popup -->
+<div class="popup" style="display:none;">
+    <div class="popup-content">
+        <h2>Contribute to Campaign</h2>
+        <input type="number" id="contribution-amount" placeholder="Enter amount in Aptos" required>
+        <button id="confirm-contribution">Confirm Contribution</button>
+        <button onclick="document.querySelector('.popup').style.display='none';">Cancel</button>
+    </div>
+</div>
+
+
+    <script src="js/view_campaigns.js"></script>
+</body>
+</html>

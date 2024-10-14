@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Campaign</title>
+    <script src="https://cdn.jsdelivr.net/npm/@aptos-labs/aptos"></script> <!-- Aptos Wallet SDK -->
+    <link rel="stylesheet" href="css/create_campaign.css"> <!-- Link to the updated CSS file -->
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Create a New Campaign</h1>
+        <form id="campaignForm">
+            <label for="name">Campaign Name:</label>
+            <input type="text" id="name" name="name" required>
+            <p class="field-description">Please provide a short, memorable name for your campaign.</p>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <p class="field-description">Describe your campaign to potential contributors (max 200 characters).</p>
+
+            <label for="goal">Goal Amount (in Aptos):</label>
+            <input type="number" id="goal" name="goal" required>
+            <p class="field-description">Enter the amount you want to raise (in Aptos).</p>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="1">Rising Scholars</option>
+                <option value="2">Emerging Leaders</option>
+                <option value="3">Future Pioneers</option>
+            </select>
+            <p class="field-description">Select the category that best describes your campaign.</p>
+
+            <button type="submit" class="submit-button">Submit Campaign</button>
+        </form>
+
+        <div id="result"></div> <!-- For displaying result or error messages -->
+    </div>
+
+    <script src="js/create_campaign.js"></script> <!-- Link to the JS file -->
+</body>
+</html>
+
